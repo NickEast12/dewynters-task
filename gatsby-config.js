@@ -1,9 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Dewynters Test`,
+    author: `nickeast`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -17,6 +15,14 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: `/assets/svgs/`,
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
