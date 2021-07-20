@@ -3,8 +3,11 @@ import { css } from 'styled-components'
 const variables = css`
   :root {
     //? Colours
-    --main: rgb(0, 216, 226);
+    --main: rgb(0, 250, 238);
+    --border: rgb(0, 223, 255);
     --secondary: rgb(0, 62, 121);
+    --secondaryAlpha: rgba(0, 62, 121, 0.9);
+    --gradient: linear-gradient(117deg, var(--main) 20%, var(--secondary) 110%);
 
     //? Fonts
     --title: cursive-title, -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
@@ -20,11 +23,14 @@ const variables = css`
     --fz-lg: 18px;
     --fz-xl: 20px;
     --fz-xxl: 22px;
-    --fz-heading: 32px;
+    --fz-heading: 31px;
 
     //? Default values
     --auto: 0 auto;
     --max-width: 1200px;
+
+    //? Borders
+    --border: solid 2px var(--main);
   }
 `
 export default variables

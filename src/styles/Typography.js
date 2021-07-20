@@ -15,6 +15,10 @@ const typography = css`
     src: url(${ProximaNovaWoffTwo}) format('woff2'),
       url(${ProximaNovaWoff}) format('woff');
   }
+
+  h3 {
+    font-size: var(--fz-heading);
+  }
 `
 
 export default typography

@@ -1,7 +1,11 @@
-import PropTypes from 'prop-types'
 import * as React from 'react'
+import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
+import { ThemeProvider } from 'styled-components'
+import 'normalize.css'
+// ? Local imports
 import GlobalStyles from '../styles/GlobalStyle'
+import theme from '../styles/theme'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -16,8 +20,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <GlobalStyles />
-      <main>{children}</main>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <main>{children}</main>
+      </ThemeProvider>
     </>
   )
 }
