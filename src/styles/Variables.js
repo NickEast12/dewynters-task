@@ -27,7 +27,7 @@ const variables = css`
 
     //? Default values
     --auto: 0 auto;
-    --max-width: 1200px;
+    --maxWidth: 1200px;
 
     //? Borders
     --border: solid 2px var(--main);

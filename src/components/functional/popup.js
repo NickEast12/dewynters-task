@@ -24,6 +24,9 @@ const PopupStyles = styled.aside`
     border-radius: 1px;
     margin: var(--auto);
     background: #fff;
+    @media only screen and (min-width: 768px) {
+      width: 40%;
+    }
     .close {
       position: absolute;
       background: none;
