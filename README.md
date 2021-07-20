@@ -4,22 +4,17 @@
   Dewynters Task
 </h1>
 
-
-## 🚀 Start
-
 1.  **Install node packages**
 
-    
-
     ```shell
-    npm i 
+    npm instakk
     ```
 
-1.  **Start developing.**
+2.  **Start development server.**
 
     Navigate into your new site’s directory and start it up.
 
     ```shell
-  npm run dev
+    npm run dev
     ```
 
