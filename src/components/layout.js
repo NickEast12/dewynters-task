@@ -7,26 +7,14 @@ import 'normalize.css'
 import GlobalStyles from '../styles/GlobalStyle'
 import theme from '../styles/theme'
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
-  return (
-    <>
-      <ThemeProvider theme={theme}>
-        <GlobalStyles />
-        <main>{children}</main>
-      </ThemeProvider>
-    </>
-  )
-}
+const Layout = ({ children }) => (
+  <>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <main>{children}</main>
+    </ThemeProvider>
+  </>
+)
 
 Layout.propTypes = {
   children: PropTypes.any,

@@ -29,8 +29,24 @@ const HomeLeftStyles = styled.section`
     width: 100px;
     z-index: -2;
   }
+  @media only screen and (min-width: 670px) {
+    > svg {
+      width: 200px;
+      top: 0;
+    }
+  }
   @media only screen and (min-width: 1024px) {
     border-bottom: solid 2px var(--main);
+    > svg {
+      width: 800px;
+      left: -27rem;
+      transform: rotate(40deg);
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    > svg {
+      left: -20rem;
+    }
   }
 `
 const HomeLeft = () => {

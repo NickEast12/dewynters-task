@@ -27,6 +27,15 @@ const PopupStyles = styled.aside`
     @media only screen and (min-width: 768px) {
       width: 40%;
     }
+    @media only screen and (min-width: 1280px) {
+      width: 40%;
+      p {
+        font-size: 25px;
+      }
+      strong {
+        font-size: 25px;
+      }
+    }
     .close {
       position: absolute;
       background: none;
