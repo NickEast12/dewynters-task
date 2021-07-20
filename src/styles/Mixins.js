@@ -12,6 +12,7 @@ const mixins = {
     );
     padding: 0.65rem 0;
     border: none;
+    max-width: 185px;
   `,
   title: css`
     margin: 0.5rem auto;
