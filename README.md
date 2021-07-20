@@ -7,7 +7,7 @@
 1.  **Install node packages**
 
     ```shell
-    npm instakk
+    npm install
     ```
 
 2.  **Start development server.**
